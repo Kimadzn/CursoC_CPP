@@ -2,7 +2,7 @@
 #include <stdlib.h>
  
 //Aloca um vetor do tamanho pedido
-int* alocaVetor (int tam ){
+int* alocaVetor (int tam){
  
     //É criado um ponteiro
     int *v;
