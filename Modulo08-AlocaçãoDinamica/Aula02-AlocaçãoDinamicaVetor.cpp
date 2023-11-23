@@ -2,7 +2,7 @@
 #include <stdlib.h>
  
 //Aloca um vetor do tamanho pedido
-int* alocaVetor (int tam){
+int *alocaVetor (int tam){
  
     //É criado um ponteiro
     int *v;
@@ -20,7 +20,7 @@ int main(){
     int *vetor , tam ,i;
  
     //Lendo o tamanho do vetor
-    printf("Digite um tamanho");
+    printf("Digite um tamanho:\n");
     scanf ( "%d", &tam ) ;
  
     //Vetor vai receber um endereço de memória com o vetor que foi alocado
@@ -36,6 +36,7 @@ int main(){
     //Imprimindo o vetor na tela
     for(i=0;i<tam;i++){
         printf("%d", vetor[i]);
+        printf("\n");
     }
  
     //Libera a memória após usar o vetor

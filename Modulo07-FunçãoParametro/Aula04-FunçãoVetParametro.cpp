@@ -20,6 +20,7 @@ void modificaVetor(int *vetor, int tamanho){
     //Percorrendo o vetor
     for(i = 0; i < tamanho;i++)
         vetor[i] = vetor[i] + 1;
+        printf("\n");
  
 }
  
@@ -28,15 +29,16 @@ int main(){
  
     //Definindo Vetor
     int v[3] = {1,2,3};
+    int tamanho =  3;
  
     //Mostrando vetor
-    imprimeVetor(v, 3);
+    imprimeVetor(v, tamanho);
  
     //Modifica o vetor
-    modificaVetor(v, 3);
+    modificaVetor(v, tamanho);
  
     //Mostrando vetor
-    imprimeVetor(v, 3);
+    imprimeVetor(v, tamanho);
  
     //Retorno da Função
     return 0;
