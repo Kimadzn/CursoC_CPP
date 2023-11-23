@@ -16,7 +16,7 @@ int* alocaMatriz (int *matriz, int linhas, int colunas ){
  
 int main(){
  
-    /*
+    
     //Ponteiro que vai apontar para o vetor criado
     int linhas = 3 , colunas = 3, i, j;
  
@@ -38,31 +38,6 @@ int main(){
     }
  
     free(mat);
- 
- 
-    /*****************************************OUTRA FORMA************************************/
-    int **matriz ,nl , nc ,i,j;
- 
-    scanf("%d", &nl) ;
-    scanf("%d", &nc);
- 
-    //Alocando memória para o vetor de linhas
-    matriz = (int **) malloc ( nl * sizeof (int *) ) ;
- 
-    //Alocando memória para as colunas de cada linha
-    for ( i =0; i < nl ; i ++)
-        matriz[i] = (int *) malloc ( nc * sizeof (int) ) ;
- 
-    //Preenchendo valores e imprimindo na tela
-    for(i = 0; i < nl; i++){
-         for(j = 0; j < nc; j++){
-            matriz[i][j] = i;
-            printf("%d ",matriz[i][j]);
-         }
-         printf("\n");
-    }
- 
-    free(matriz);
  
     return 0;
 }
