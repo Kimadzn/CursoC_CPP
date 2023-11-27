@@ -18,19 +18,19 @@ void shell_sort(int vetor[TAM]){
     int i, j, atual;
     int h = 1;
 
-    //De quantos em quantos será o pulo entre análises
+    //De quantos em quantos serï¿½ o pulo entre anï¿½lises
     while(h < TAM){
         h = 3*h+1;
     }
 
     while(h > 1){
 
-        //Reduz a distância entre as análises
+        //Reduz a distï¿½ncia entre as anï¿½lises
         h = h / 3;
 
         for(i = h; i < TAM; i++){
 
-            //Elemento atual em análise
+            //Elemento atual em anï¿½lise
             atual = vetor[i];
 
             //Elemento anterior ao analisado
@@ -39,15 +39,15 @@ void shell_sort(int vetor[TAM]){
             //Analisando membros anteriores
             while( (j >=0) && (atual < vetor[j])){
 
-                //Posiciona os elmeentos uma posição para frente
+                //Posiciona os elmeentos uma posiï¿½ï¿½o para frente
                 vetor[j + h] = vetor[j];
 
-                //Faz o j andar para trás
+                //Faz o j andar para trï¿½s
                 j = j - h;
 
             }
 
-            //Agora que o espaço foi aberto, colocamos o atual (Menor número) na posição correta
+            //Agora que o espaï¿½o foi aberto, colocamos o atual (Menor nï¿½mero) na posiï¿½ï¿½o correta
             vetor[j + h] = atual;
 
             imprimeVetor(vetor);
