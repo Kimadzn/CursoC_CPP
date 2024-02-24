@@ -19,7 +19,7 @@ void main(){
     int b = 5.5;
     printf("O valor de b é = %d \n", b);
     scanf("%f", &b);
-    printf("O valor de a mudou para %f", b);
+    printf("O valor de a mudou para %d", b);
     
     //Lendo letra
     char letra = 't';

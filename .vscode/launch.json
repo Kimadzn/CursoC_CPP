@@ -1,6 +1,27 @@
 {
     "configurations": [
         {
+            "type": "java",
+            "name": "teste",
+            "request": "launch",
+            "mainClass": "teste",
+            "projectName": "CursoC_C++_f754c80c"
+        },
+        {
+            "type": "java",
+            "name": "Simple",
+            "request": "launch",
+            "mainClass": "Simple",
+            "projectName": "CursoC_C++_f754c80c"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "CursoC_C++_f754c80c"
+        },
+        {
             "name": "C/C++: gcc.exe build and debug active file",
             "type": "cppdbg",
             "request": "launch",
